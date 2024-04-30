@@ -71,4 +71,8 @@ int main()
     op(d,tmp);
     printf("\n");
     op(d,f);
+
+    free(a);
+    free(tmp);
+    free(f);
 }
