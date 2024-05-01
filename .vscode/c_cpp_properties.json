@@ -1,23 +1,24 @@
 {
-    "configurations": [
-        {
-            "name": "Win32",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "intelliSenseMode": "${default}",
-            "cStandard": "c23",
-            "cppStandard": "c++23",
-            "browse": {
-                "limitSymbolsToIncludedHeaders": true
-            },
-            "mergeConfigurations": true
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "windows-gcc-x64",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "mergeConfigurations": true,
+      "compilerPath": "C:/msys64/ucrt64/bin/gcc.exe"
+    }
+  ],
+  "version": 4
 }

@@ -13,52 +13,28 @@ void ip(int *d, int *m, int *y)
     scanf("%d",y);
 }
 
-int *Sep2Arr(int d, int m, int y)
+bool IsLeapYear(int y)
 {
-    int *a = (int*) malloc(sizeof(int) * 8);
-    a[0] = d / 10;
-    a[1] = d % 10;
-    a[2] = m / 10;
-    a[3] = m % 10;
-    a[4] = y / 1000;
-    a[5] = y % 1000 / 100;
-    a[6] = y % 1000 % 100 / 10;
-    a[7] = y % 1000 % 100 % 10;
-    return a;
+    return (y % 4 == 0);
 }
 
-bool DateValid(int *a)
+bool DateValid(int d, int m, int y)
 {
-    bool c = true;
-    if(a[4] > 9)
-        c = false;
-    if(a[2] == 0)
-        if(a[3] == 0)
-            c = false;
-    else if(a[2] == 1)
-        if(a[3] > 2)
-            c = false;
-    else
-        c = false;
-    switch (expression)
-    {
-    case /* constant-expression */:
-        /* code */
-        break;
-    
-    default:
-        break;
-    }
+    int days[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    if(IsLeapYear(y))
+        days[1] = 29;
+    if(y > 9999 || y < 0)
+        return false;
+    if(m < 1 || m > 12)
+        return false;
+    if(d < 1 || d > days[m-1])
+        return false;
+    return true;
 }
 
-void op(int n, int *a)
+void op(int d, int m, int y)
 {
-    For(i,0,n)
-    {
-        printf("%d",*(a+i));
-        if(i == 1 || i == 3)
-            printf("/");
-    }
+    printf("Ngay vua nhap: %02d/%02d/%04d",d,m,y);
 }
 
 int main()
@@ -67,7 +43,10 @@ int main()
 
     ip(&d,&m,&y);
 
-    int *a = Sep2Arr(d,m,y);
+    op(d,m,y);
 
-    op(8,a);
+    if(DateValid(d,m,y))
+        printf("\nNgay hop le!");
+    else
+        printf("\nNgay khong hop le!");
 }
