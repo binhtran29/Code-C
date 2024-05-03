@@ -1,0 +1,11 @@
+Danh sach nhan vien:
+    1                  han  1000  A
+    2                 hana  2000  B
+
+Luong trung binh cua phong A la: 1000.00
+Luong trung binh cua phong B la: 2000.00
+Khong co nhan vien nao thuoc phong C
+
+Danh sach sau sap xep:
+    1                  han  1000  A
+    2                 hana  2000  B
