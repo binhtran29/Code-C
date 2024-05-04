@@ -82,10 +82,10 @@ float MaxSum(int n, float **a)
 void opMaxSum(int n, float **a)
 {
     float *s = SumRows(n,a);
-    printf("\nCac hang co tong lon nhat la: ");
+    printf("\nCac hang co tong lon nhat la:");
     For(i,0,n)
         if(s[i] == MaxSum(n,a))
-            printf("%d",i);
+            printf(" %d",i);
 }
 
 int main()
@@ -121,4 +121,8 @@ int main()
     For(i,0,n)
         printf("\nTong hang thu %d la: %.2f",i,sum[i]);
     opMaxSum(n,a);
+
+    fclose(file);
+    free(a);
+    free(sum);
 }
