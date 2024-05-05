@@ -117,5 +117,5 @@ int main()
     FindJobMax(file,n,nv);
 
     fclose(file);
-    free(nv);
+    free(nv)
 }
