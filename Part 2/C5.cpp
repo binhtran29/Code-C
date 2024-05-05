@@ -102,4 +102,7 @@ int main()
     MaxLenLine(n,a);
 
     printf("\nCo %d diem nam trong goc phan tu thu nhat!",CountPnt(n,a));
+
+    fclose(file);
+    free(a);
 }

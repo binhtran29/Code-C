@@ -1,0 +1,19 @@
+3
+Danh sach nhan vien:
+Ho ten: a
+Luong: 1
+Ma cong viec: 1
+Ho ten: b
+Luong: 2
+Ma cong viec: 2
+Ho ten: c
+Luong: 1
+Ma cong viec: 1
+
+Luong trung binh cua ma cong viec 1 la: 1.00
+Luong trung binh cua ma cong viec 2 la: 2.00
+Khong co nhan vien nao co ma cong viec 3!
+
+Tong luong cua ma cong viec 2 la: 2
+
+Cac cong viec co nhieu nhan vien tham gia nhat la: 1
